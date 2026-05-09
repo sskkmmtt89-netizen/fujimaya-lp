@@ -8,7 +8,6 @@ export default function InfoSection() {
   return (
     <section className="bg-[#faf7f0] py-14 px-5">
       <div className="max-w-lg mx-auto">
-        {/* Header */}
         <div className="animate-on-scroll mb-8">
           <span className="text-[#1a6b3a] text-xs font-bold tracking-[0.3em] uppercase">
             Info
@@ -18,7 +17,6 @@ export default function InfoSection() {
           </h2>
         </div>
 
-        {/* Hours */}
         <div className="animate-on-scroll bg-white rounded-2xl p-5 shadow-sm mb-4">
           <div className="flex items-center gap-2 mb-4">
             <div className="w-8 h-8 bg-[#e8f5ed] rounded-xl flex items-center justify-center">
@@ -48,7 +46,6 @@ export default function InfoSection() {
           </div>
         </div>
 
-        {/* Address */}
         <div className="animate-on-scroll bg-white rounded-2xl p-5 shadow-sm mb-4">
           <div className="flex items-center gap-2 mb-4">
             <div className="w-8 h-8 bg-[#e8f5ed] rounded-xl flex items-center justify-center">
@@ -69,29 +66,20 @@ export default function InfoSection() {
           <p className="text-[#3d2b1f]/50 text-xs">
             ※ 緑の大きな看板が目印です
           </p>
-        </div>
-
-        {/* Phone */}
-        <div className="animate-on-scroll bg-white rounded-2xl p-5 shadow-sm mb-6">
-          <div className="flex items-center gap-2 mb-4">
-            <div className="w-8 h-8 bg-[#e8f5ed] rounded-xl flex items-center justify-center">
-              <svg className="w-4 h-4 text-[#1a6b3a]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-              </svg>
-            </div>
-            <h3 className="font-black text-[#3d2b1f] text-base">お電話</h3>
+          <div className="mt-4 pt-4 border-t border-gray-100">
+            <p className="text-[#3d2b1f]/50 text-xs mb-2">お電話</p>
+            
+              href="tel:044-712-5155"
+              className="flex items-center justify-between p-3 bg-[#f5f5f5] rounded-xl"
+            >
+              <span className="font-black text-[#3d2b1f] text-xl tracking-wide">
+                044-712-5155
+              </span>
+              <div className="bg-[#1a6b3a] text-white text-xs font-bold px-3 py-1.5 rounded-lg">
+                タップで発信
+              </div>
+            </a>
           </div>
-          <a
-            href="tel:044-712-5155"
-            className="flex items-center justify-between p-3 bg-[#f5f5f5] rounded-xl"
-          >
-            <span className="font-black text-[#3d2b1f] text-xl tracking-wide">
-              044-712-5155
-            </span>
-            <div className="bg-[#1a6b3a] text-white text-xs font-bold px-3 py-1.5 rounded-lg">
-              タップで発信
-            </div>
-          </a>
         </div>
       </div>
     </section>
