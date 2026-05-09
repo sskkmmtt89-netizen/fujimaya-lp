@@ -1,47 +1,28 @@
 export default function ReviewSection() {
   const reviews = [
     {
-      name: "おそ松ボーイ",
+      name: "Googleユーザー",
       rating: 5,
-      date: "2026年3月",
-      title: "想像超えて美味い",
-      body: "食べログ評価3.02を見て「まあ普通かな」と思いながら入ったけど、これは本気で旨い。スープの濃度が他の家系とは全然違う。骨粉感がしっかりあって、重心の低いガチな一杯。また来ます。",
-      avatar: "お",
-      avatarBg: "bg-orange-500",
+      date: "2026年",
+      title: "ネギラーメン＋海苔増し最高",
+      body: "先日稲田堤へ家系ラーメンを初めて食べに行きました。長ネギが好きなのでネギラーメン＋海苔増し＋ネギチャーシュー丼を注文！油だけ少なめにしました。濃厚なスープの旨味が広がりました。良質な海苔が大判でとても華やかです！長ネギは胡麻油とペッパーが入っているようでシャキシャキとして風味も最高でした！チャーシューは大判で食べごたえあり、甘味がありました。ルイボスティー飲み放題も嬉しいです。テーブル席もあるのでお子様連れ、家族、女性同士にもオススメです！",
+      avatar: "G",
+      avatarBg: "bg-blue-500",
     },
     {
-      name: "マコラーメン",
-      rating: 5,
-      date: "2026年3月",
-      title: "名店「流川」の家系挑戦、本気度が伝わる",
-      body: "「中華そば流川」の新ブランド。圧力釜でしっかり炊き出したスープは、ライト家系とは一線を画す本格派。稲田堤の家系シーンに新たな選択肢が加わった。",
-      avatar: "マ",
-      avatarBg: "bg-[#1a6b3a]",
-    },
-    {
-      name: "IKKO'S FILMS",
+      name: "Googleユーザー",
       rating: 4,
-      date: "2026年3月",
-      title: "濃度と骨粉感に振り切った家系",
-      body: "スープは圧力釜で数種の豚ガラ・鶏ガラを合わせた本格仕様。濃度・骨粉感にこだわった、重心低めのガチな家系。緑の看板と深夜0時まで営業というスタイルも◎",
-      avatar: "I",
-      avatarBg: "bg-gray-700",
-    },
-    {
-      name: "けん18172",
-      rating: 5,
-      date: "2026年3月",
-      title: "新店とは思えないクオリティ",
-      body: "オープンしたばかりなのに、スープの完成度が高い。清潔感のある店内で気持ちよく食べられました。ネギチャーシューが特に美味しかった！",
-      avatar: "け",
-      avatarBg: "bg-blue-600",
+      date: "2026年",
+      title: "どパンチ家系",
+      body: "どパンチ家系ラーメン。麺は菅野製麺さんとのこと。卓上にあるニンニクが美味しいです。",
+      avatar: "G",
+      avatarBg: "bg-red-500",
     },
   ];
 
   return (
     <section className="bg-[#0f4224] py-14 px-5">
       <div className="max-w-lg mx-auto">
-        {/* Header */}
         <div className="animate-on-scroll mb-8 text-center">
           <span className="text-[#4ade80] text-xs font-bold tracking-[0.3em] uppercase">
             Reviews
@@ -66,15 +47,12 @@ export default function ReviewSection() {
           </div>
         </div>
 
-        {/* Review cards */}
         <div className="space-y-4">
           {reviews.map((review, i) => (
             <div
-              key={review.name}
+              key={review.name + i}
               className="animate-on-scroll bg-white/10 backdrop-blur-sm border border-white/10 rounded-2xl p-5"
-              style={{ animationDelay: `${i * 0.1}s` }}
             >
-              {/* Top row */}
               <div className="flex items-center gap-3 mb-3">
                 <div
                   className={`w-10 h-10 rounded-full ${review.avatarBg} flex items-center justify-center text-white font-black text-base flex-shrink-0`}
@@ -99,17 +77,13 @@ export default function ReviewSection() {
           ))}
         </div>
 
-        {/* Google review link */}
         <div className="animate-on-scroll mt-6 text-center">
-          <a
+          
             href="https://maps.google.com/?q=横浜家系ラーメン+藤真家+川崎市多摩区菅2-1-3"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 text-[#4ade80] text-sm font-bold border border-[#4ade80]/40 px-5 py-2.5 rounded-full"
           >
-            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-            </svg>
             Googleで口コミをもっと見る
           </a>
         </div>
